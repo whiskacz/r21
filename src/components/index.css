@@ -1,0 +1,73 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    width: 40vw;
+    height: 60vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #aaa;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerMain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.containerUpper {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 20px;
+    color: white;
+    background-color: #000;
+}
+
+.containerUpperTask {
+    margin-left: 320px;
+}
+
+.containerMiddle{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px;
+}
+
+input[type=text] {
+    flex-grow: 1;
+    margin: auto 20px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    background-color: chartreuse;
+    cursor: pointer;
+}
+
+
+.containerList {
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.taskCont:nth-of-type(odd) {
+    background-color: #ddd;
+}
+
+.statusDone {
+    background-color: darkviolet;
+}
